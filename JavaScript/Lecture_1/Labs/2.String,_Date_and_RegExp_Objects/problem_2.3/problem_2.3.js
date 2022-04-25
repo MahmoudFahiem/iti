@@ -103,67 +103,6 @@ const emailValidation = () => {
 };
 
 /**
- * Get day name form a date
- *
- * @param {object} date
- * @returns {string} dayName
- */
-const getDayName = (date) => {
-  /**
-   * Validate date parameter
-   */
-  if (!date) throw Error("date parameter is required");
-  if (!date instanceof Date)
-    throw Error("date parameter is not a valid date object");
-  const dayRep = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
-  /**
-   * Get day number
-   */
-  const dayNum = date.getDay();
-  /**
-   * Return day name according to day numerical representation
-   */
-  return dayRep[dayNum];
-};
-
-/**
- * Get month name form a date
- *
- * @param {object} date
- * @returns {string} monthName
- */
-const getMonthName = (date) => {
-  /**
-   * Validate date parameter
-   */
-  if (!date) throw Error("date parameter is required");
-  if (!date instanceof Date)
-    throw Error("date parameter is not a valid date object");
-  const dayRep = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-  /**
-   * Get month number
-   */
-  const dayNum = date.getMonth();
-  /**
-   * Return month name according to day numerical representation
-   */
-  return dayRep[dayNum];
-};
-
-/**
  * Main Program
  */
 const userFavColor = colorValidation(colorOptions);
@@ -171,11 +110,7 @@ const userName = nameValidation();
 const userTelephoneNum = telephoneNumValidation();
 const userMobileNum = mobileNumValidation();
 const userEmail = emailValidation();
-const currentDate = new Date();
-const dayName = getDayName(currentDate);
-const monthName = getMonthName(currentDate);
-const dayNumber = currentDate.getDate();
-const yearNumber = currentDate.getFullYear();
+const currentDate = new Date().toDateString();
 const viewTemp = `
   <main>
     <h1>Entering User Info</h1>
@@ -193,7 +128,7 @@ const viewTemp = `
         <span>${userEmail}</span>
       </p>
     </section>
-    <p class="${userFavColor}">today is <span>${dayName} ${monthName} ${dayNumber} ${yearNumber}</span></p>
+    <p class="${userFavColor}">today is <span>${currentDate}</span></p>
   </main>
 `;
 
