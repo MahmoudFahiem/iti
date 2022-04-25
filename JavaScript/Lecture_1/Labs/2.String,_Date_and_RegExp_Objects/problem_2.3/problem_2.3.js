@@ -113,8 +113,8 @@ const userEmail = emailValidation();
 const currentDate = new Date().toDateString();
 const viewTemp = `
   <main>
-    <h1>Entering User Info</h1>
-    <section>
+    <header>
+      <h1>Entering User Info</h1>
       <p class="${userFavColor}">Welcome dear guest 
         <span>${userName}</span>
       </p>
@@ -127,8 +127,10 @@ const viewTemp = `
       <p class="${userFavColor}">Your email address is
         <span>${userEmail}</span>
       </p>
-    </section>
-    <p class="${userFavColor}">today is <span>${currentDate}</span></p>
+    </header>
+    <footer>
+      <p class="${userFavColor}">today is <span>${currentDate}</span></p>
+    </footer>
   </main>
 `;
 
