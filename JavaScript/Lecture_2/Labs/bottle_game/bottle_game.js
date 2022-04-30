@@ -7,12 +7,16 @@ const getPersons = () => {
   const persons = [];
   while (true) {
     const personName = prompt(
-      `Enter a valid person Name or exit (persons count ${
+      `Enter a valid person Name or exit (min number of persons is 2) (persons count ${
         persons.length || "-"
       } )`
     ).toLowerCase();
     const pattern = /^[a-z A-Z]+$/g;
-    if (!pattern.test(personName)) continue;
+    if (
+      !pattern.test(personName) ||
+      (persons.length < 2 && personName === "exit")
+    )
+      continue;
     if (personName === "exit") return persons;
     persons.push(personName);
   }
