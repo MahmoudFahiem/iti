@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  padding: 2rem 0;
+}
+
+.traffic-light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 1rem;
+  background-color: #ddd;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.traffic-stat {
+  margin: 0;
+  text-transform: capitalize;
+  color: red;
+  font-size: 1.5rem;
+}
