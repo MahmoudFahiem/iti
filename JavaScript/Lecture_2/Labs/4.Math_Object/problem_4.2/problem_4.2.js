@@ -19,4 +19,4 @@ const getNumber = () => {
 const number = getNumber();
 const squareRoot = Math.sqrt(number);
 
-alert(`Square root of ${number} ${squareRoot}`);
+document.write(`<h1>Square root of ${number} is ${squareRoot}</h1>`);
