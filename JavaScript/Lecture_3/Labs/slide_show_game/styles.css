@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* .indicators */
+
+.img-container {
+  height: 60vh;
+}
+
+.img-container .slide-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+}
+
+#next {
+  right: -3rem;
+}
+
+#prev {
+  left: -3rem;
+}
