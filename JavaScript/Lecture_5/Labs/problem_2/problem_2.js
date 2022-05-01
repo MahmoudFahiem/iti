@@ -18,10 +18,6 @@ Rectangle.prototype.calcPerimeter = function () {
   return (this._height + this._width) * 2;
 };
 
-Rectangle.prototype.calcPerimeter = function () {
-  return (this._height + this._width) * 2;
-};
-
 Rectangle.prototype.toString = function () {
   document.write(
     `<h1>The rectange whose width is ${this._width} and height is ${
