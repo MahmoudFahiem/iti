@@ -1,0 +1,54 @@
+body {
+  color: #fff;
+  text-align: center;
+  font-wight: light;
+}
+
+.container {
+  max-width: 768px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: start;
+}
+
+.container > * {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  padding: 10px;
+  background-color: darkgreen;
+}
+
+nav {
+  padding: 10px;
+  background-color: #ddd;
+  color: darkblue;
+}
+
+section {
+  padding: 10px;
+  background-color: darkorange;
+  height: 100%;
+}
+
+article {
+  padding: 10px;
+  background-color: orange;
+}
+
+details {
+  color: #333;
+  font-size: 1.3rem;
+}
+
+footer {
+  padding: 10px;
+  background: darkred;
+}

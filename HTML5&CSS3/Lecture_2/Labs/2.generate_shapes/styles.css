@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 768px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shapes-gn-btns {
+  margin: 0 auto;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.shapes-gn-btns .shape-gn-btn {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 4px solid transparent;
+}
+
+.shapes-gn-btns .shape-gn-btn:active {
+  background-color: #222;
+}
+
+.shapes-gn-btns .shape-gn-btn svg {
+  width: 30px;
+  fill: rgb(255, 89, 0);
+}
+
+#drawing-sheet {
+  height: 30rem;
+  border: 2px solid rgb(255, 89, 0);
+  overflow: auto;
+}
+
+#drawing-sheet svg {
+  padding: 10px;
+  width: 25%;
+  max-width: 100%;
+  max-height: 100%;
+  fill: rgb(255, 89, 0);
+}

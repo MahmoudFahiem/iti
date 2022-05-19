@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Shapes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="shapes-gn-btns">
+        <button class="shape-gn-btn" data-shape-type="line">
+          <svg viewBox="0 0 512 512">
+            <line
+              x1="0"
+              y1="0"
+              x2="100%"
+              y2="100%"
+              style="stroke: rgb(255, 89, 0); stroke-width: 20"
+            />
+          </svg>
+        </button>
+        <button class="shape-gn-btn" data-shape-type="rectangle">
+          <svg viewBox="0 0 512 512">
+            <rect width="100%" height="70%" />
+          </svg>
+        </button>
+        <button class="shape-gn-btn" data-shape-type="circle">
+          <svg viewBox="0 0 512 512">
+            <circle cx="50%" cy="50%" r="50%"></circle>
+          </svg>
+        </button>
+      </section>
+      <section id="drawing-sheet"></section>
+    </main>
+    <script src="app.js.js"></script>
+  </body>
+</html>
