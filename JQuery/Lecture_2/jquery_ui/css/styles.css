@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  min-height: 80vh;
+  text-align: center;
+}
+
+#toggle-class {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#toggle-class.effect-1 {
+  width: 15rem;
+  height: 15rem;
+  background-color: #333;
+}
+
+#switch-class {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ddd;
+}
+
+#switch-class.effect-1 {
+  width: 15rem;
+  height: 15rem;
+  background-color: #333;
+}
+
+#switch-class.effect-2 {
+  width: 30rem;
+  height: 15rem;
+  background-color: #ddd;
+}

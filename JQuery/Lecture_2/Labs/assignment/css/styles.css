@@ -1,0 +1,15 @@
+#sidebar {
+  position: fixed;
+  left: 0;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: #ddd;
+  width: 30%;
+  height: 100vh;
+  overflow-y: auto;
+  transition: transform 0.7s;
+}
+
+#sidebar.expand {
+  transform: none;
+}
