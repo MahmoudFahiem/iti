@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form>
+      <article class="input-container">
+        <label for="name">Name: </label>
+        <input
+          class="form-control"
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </article>
+      <article class="input-container">
+        <label for="password">Password: </label>
+        <input
+          class="form-control"
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+      </article>
+      <div id="gender" class="radio-wrapper">
+        <label>Select Gender:</label>
+        <article class="input-container">
+          <label for="male">
+            <img src="imgs/male.jpeg" />
+          </label>
+          <input
+            class="form-radio"
+            type="radio"
+            name="gender"
+            value="male"
+            id="male"
+            required
+          />
+        </article>
+        <article class="input-container">
+          <label for="female"><img src="imgs/female.jpeg" /></label>
+          <input
+            class="form-radio"
+            type="radio"
+            name="gender"
+            value="female"
+            id="female"
+            required
+          />
+        </article>
+      </div>
+      <article class="input-container">
+        <label for="fav-color">Select your favourite color:</label>
+        <select id="fav-color" class="form-select" name="fav-color" required>
+          <option disabled selected>select your default color</option>
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+        </select>
+      </article>
+      <div class="center">
+        <button id="login">register</button>
+      </div>
+    </form>
+    <script type="module" src="js/cookie.js"></script>
+    <script type="module" src="js/register.js"></script>
+  </body>
+</html>
