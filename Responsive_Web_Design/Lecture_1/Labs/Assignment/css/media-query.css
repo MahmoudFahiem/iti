@@ -1,0 +1,23 @@
+@media screen and (min-width: 576px) {
+  main {
+    max-width: 90%;
+    margin: auto;
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  main {
+    max-width: 100%;
+    margin: 0;
+  }
+  aside#profile-details {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  aside#news {
+    display: block;
+  }
+}

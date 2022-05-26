@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+  </head>
+  <body>
+    <div id="logo">
+      <a href="#">
+        <img src="imgs/logo.png" />
+        <span>Mahmoud Fahiem</span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a class="active" href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">contact us</a>
+        </li>
+        <li>
+          <a href="#">about</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <aside id="profile-details">
+        <form>
+          <p>Login</p>
+          <div>
+            <input type="text" placeholder="Enter your username" />
+          </div>
+          <div>
+            <input type="password" placeholder="Enter your password" />
+          </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+        <section class="social-links">
+          <h4>Social Links</h4>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </section>
+        <video controls src="assets/video.mp4"></video>
+      </aside>
+      <main>
+        <h2 class="center">My Profile</h2>
+        <ul>
+          <li>Name: Mahmoud Fahiem</li>
+          <li>Age: 26</li>
+          <li>Phone: 01279001036</li>
+          <li>Faculty: <a href="http://eaeat.eg.com">EAEAT</a></li>
+          <li>
+            Mail:
+            <a href="mailto:contact@mahmoudfahiem.com"
+              >contact@mahmoudfahiem.com</a
+            >
+          </li>
+        </ul>
+      </main>
+      <aside id="news">
+        <div class="img-wrapper">
+          <img src="imgs/profile.jpg" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+          consectetur Lorem ipsum dolor sit amet consectetur.
+        </p>
+      </aside>
+    </div>
+    <footer>
+      <p>All copy rights are reserved</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  </body>
+</html>
