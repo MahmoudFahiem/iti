@@ -1,0 +1,14 @@
+:root {
+  --primary-color: rgb(255, 167, 3);
+  --secondary-color: rgb(68, 217, 217);
+  --danger-color: rgb(239, 59, 59);
+  --dark-color: #333;
+  --light-color: #ddd;
+
+  // Grid Variables
+
+  --gutter-x: 15px;
+  --gutter-y: 0;
+}
+
+$columns: 16;

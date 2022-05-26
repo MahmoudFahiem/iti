@@ -1,0 +1,29 @@
+header {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+
+  @include mediumScreen {
+    text-align: start;
+  }
+
+  .img-container {
+    margin: 0 auto;
+
+    @include mediumScreen {
+      margin: 0;
+    }
+
+    img {
+      padding: 0.5rem;
+      background: #fff;
+      border-radius: 50%;
+      height: 8rem;
+      box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+
+      @include mediumScreen {
+        height: auto;
+      }
+    }
+  }
+}

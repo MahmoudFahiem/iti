@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout Using sass</title>
+    <link rel="stylesheet" href="css/sass/main.css" />
+  </head>
+  <body>
+    <header class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-2 img-container py-3">
+            <img src="imgs/logo.png" />
+          </div>
+          <div class="col-md-11 col-xl-13 ml-auto">
+            <h1>Mahmoud Fahiem</h1>
+            <h4>Web Deveoper</h4>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Explicabo consequuntur, ab omnis accusamus facilis nobis, Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-7">
+            <section class="contacts py-2">
+              <h3 class="center capitalize">contacts</h3>
+              <section class="contact-links">
+                <a href="#">116 El-Shorouq City - Cairo - Egypt</a>
+                <a href="tel:20127900106">01279001036</a>
+                <a href="mailto: contact@mahmoudfahiem.com"
+                  >contact@mahmoudfahiem.com</a
+                >
+                <a href="https://mahmoudfahiem.com"
+                  >https://mahmoudfahiem.com</a
+                >
+              </section>
+            </section>
+            <section class="languages py-2">
+              <h3 class="center capitalize">languages</h3>
+              <div class="language py-3">
+                <h5 class="capitalize">english</h5>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="language py-3">
+                <h5 class="capitalize">arabic</h5>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 95%; --bg: var(--secondary-color)"
+                  ></div>
+                </div>
+              </div>
+              <div class="language py-3">
+                <h5 class="capitalize">frensh</h5>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 50%; --bg: var(--danger-color)"
+                  ></div>
+                </div>
+              </div>
+            </section>
+            <section class="skills py-2">
+              <h3 class="center capitalize">skills</h3>
+              <div class="row">
+                <div class="col-8 col-xl-4 py-4">
+                  <div class="ratio ratio-1x1">
+                    <div class="circular-progress-bar">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="text-sm uppercase">html</div>
+                        </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        style="--progress: 95"
+                      >
+                        <circle
+                          cx="50%"
+                          cy="50%"
+                          r="45%"
+                          stroke-linescape="round"
+                        ></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 col-xl-4 py-4">
+                  <div class="ratio ratio-1x1">
+                    <div class="circular-progress-bar">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="text-sm uppercase">css</div>
+                        </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        style="--progress: 70; --bg: var(--secondary-color)"
+                      >
+                        <circle
+                          cx="50%"
+                          cy="50%"
+                          r="45%"
+                          stroke-linescape="round"
+                        ></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 col-xl-4 py-4">
+                  <div class="ratio ratio-1x1">
+                    <div class="circular-progress-bar">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="text-sm uppercase">js</div>
+                        </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        style="--progress: 90; --bg: var(--danger-color)"
+                      >
+                        <circle
+                          cx="50%"
+                          cy="50%"
+                          r="45%"
+                          stroke-linescape="round"
+                        ></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 col-xl-4 py-4">
+                  <div class="ratio ratio-1x1">
+                    <div class="circular-progress-bar">
+                      <div class="outer">
+                        <div class="inner">
+                          <div class="text-sm uppercase">sass</div>
+                        </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        style="--progress: 95; --bg: var(--primary-color)"
+                      >
+                        <circle
+                          cx="50%"
+                          cy="50%"
+                          r="45%"
+                          stroke-linescape="round"
+                        ></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="social-links py-2">
+              <h3 class="center capitalize">social-links</h3>
+              <div class="links pt-5 text-5xl">
+                <div class="row">
+                  <div class="col">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                  <div class="col">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <div class="col">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <div class="col">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-9 col-xl-8 ml-auto">
+            <section class="achievements py-2">
+              <h3 class="bg-primary py-2 pl-6 capitalize text-white">
+                achievements
+              </h3>
+              <div class="py-2 pl-6">
+                <h5>
+                  <span>2020</span><span class="pl-4">Lorem ipsum dolor</span>
+                </h5>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquid commodi optio incidunt porro nostrum nobis nisi
+                  aliquam! Eos quaerat vero asperiores culpa aliquam vitae quae
+                  esse veritatis! Soluta, eos nostrum!
+                </p>
+              </div>
+              <div class="py-2 pl-6">
+                <h5>
+                  <span>2020</span><span class="pl-4">Lorem ipsum dolor</span>
+                </h5>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquid commodi optio incidunt porro nostrum nobis nisi
+                  aliquam! Eos quaerat vero asperiores culpa aliquam vitae quae
+                  esse veritatis! Soluta, eos nostrum!
+                </p>
+              </div>
+              <div class="py-2 pl-6">
+                <h5>
+                  <span>2020</span><span class="pl-4">Lorem ipsum dolor</span>
+                </h5>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquid commodi optio incidunt porro nostrum nobis nisi
+                  aliquam! Eos quaerat vero asperiores culpa aliquam vitae quae
+                  esse veritatis! Soluta, eos nostrum!
+                </p>
+              </div>
+            </section>
+            <section class="education py-2">
+              <h3 class="bg-primary py-2 pl-6 capitalize text-white">
+                education
+              </h3>
+              <div class="py-2 pl-6">
+                <h5>
+                  <span>2015-2020</span
+                  ><span class="pl-4">Lorem ipsum dolor</span>
+                </h5>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquid commodi optio incidunt porro nostrum nobis nisi
+                  aliquam! Eos quaerat vero asperiores culpa aliquam vitae quae
+                  esse veritatis! Soluta, eos nostrum!
+                </p>
+              </div>
+              <div class="py-2 pl-6">
+                <h5>
+                  <span>2015-2020</span
+                  ><span class="pl-4">Lorem ipsum dolor</span>
+                </h5>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquid commodi optio incidunt porro nostrum nobis nisi
+                  aliquam! Eos quaerat vero asperiores culpa aliquam vitae quae
+                  esse veritatis! Soluta, eos nostrum!
+                </p>
+              </div>
+            </section>
+            <section class="work-experience py-2">
+              <h3 class="bg-primary py-2 pl-6 capitalize text-white">
+                work experience
+              </h3>
+              <div class="py-2 pl-6">
+                <h5>
+                  <span>2015-2020</span
+                  ><span class="pl-4">Lorem ipsum dolor</span>
+                </h5>
+                <ul>
+                  <li class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  </body>
+</html>

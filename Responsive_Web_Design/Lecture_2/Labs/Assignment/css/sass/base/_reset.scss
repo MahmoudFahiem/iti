@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+@for $i from 1 to 6 {
+  h#{$i} {
+    margin: 0;
+  }
+}
+
+p {
+  margin: 0;
+}

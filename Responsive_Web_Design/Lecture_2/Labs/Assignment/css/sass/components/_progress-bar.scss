@@ -1,0 +1,60 @@
+.progress-bar {
+  --bg: var(--primary-color);
+  height: 1.5rem;
+  background-color: var(--dark-color);
+  position: relative;
+
+  .progress {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--bg);
+  }
+}
+
+.circular-progress-bar {
+  --progress: 0;
+  --bg: var(--primary-color);
+  // width: 200px;
+  // height: 200px;
+  // position: relative;
+
+  .outer {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5rem solid var(--dark-color);
+
+    @include mediumScreen {
+      border-width: 1rem;
+    }
+
+    .inner {
+      padding: 1rem;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: var(--bg);
+    stroke-width: 50px;
+    stroke-dasharray: 1446;
+    stroke-dashoffset: calc(1446 * (1 - (var(--progress) / 100)));
+    transform: rotate(-90deg);
+  }
+}

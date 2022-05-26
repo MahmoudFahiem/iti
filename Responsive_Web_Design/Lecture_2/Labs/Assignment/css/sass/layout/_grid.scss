@@ -1,0 +1,85 @@
+.container {
+  padding: var(--gutter-y) var(--gutter-x);
+  margin: 0 auto;
+
+  @include smallScreen {
+    max-width: 550px;
+  }
+
+  @include mediumScreen {
+    max-width: 700px;
+  }
+
+  @include largeScreen {
+    max-width: 900px;
+  }
+
+  @include xLargeScreen {
+    max-width: 1100px;
+  }
+
+  @include xxLargeScreen {
+    max-width: 1300px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > [class*="col"] {
+    flex: 0 0 100%;
+    padding: var(--gutter-y) var(--gutter-x);
+  }
+}
+
+@for $i from 1 through $columns {
+  .row > .col-#{$i} {
+    flex: 0 0 100% * $i / $columns;
+    padding: --gutter-y --gutter-x;
+  }
+}
+
+@for $i from 1 through $columns {
+  .row > .col-sm-#{$i} {
+    @include smallScreen {
+      flex: 0 0 100% * $i / $columns;
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .row > .col-md-#{$i} {
+    @include mediumScreen {
+      flex: 0 0 100% * $i / $columns;
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .row > .col-lg-#{$i} {
+    @include largeScreen {
+      flex: 0 0 100% * $i / $columns;
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .row > .col-xl-#{$i} {
+    @include xLargeScreen {
+      flex: 0 0 100% * $i / $columns;
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .row > .col-xxl-#{$i} {
+    @include xxLargeScreen {
+      flex: 0 0 100% * $i / $columns;
+    }
+  }
+}
+
+.row > .col {
+  flex: 1 1 0;
+}

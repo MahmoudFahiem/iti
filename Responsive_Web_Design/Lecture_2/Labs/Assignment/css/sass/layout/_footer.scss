@@ -1,0 +1,14 @@
+footer {
+  $divColors: var(--danger-color) var(--primary-color) var(--secondary-color);
+  height: 0.8rem;
+
+  div {
+    height: 100%;
+  }
+
+  @for $i from 1 through 3 {
+    div:nth-child(#{$i}) {
+      background-color: nth($divColors, $i);
+    }
+  }
+}
